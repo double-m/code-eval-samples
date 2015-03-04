@@ -8,7 +8,7 @@ import org.junit.Test;
 
 public class MainTest {
 
-	Challenge challenge = new Challenge();
+	Challenge challenge = new Challenge("Test Hello World!");
 	
     @Before
     public void setUp() {

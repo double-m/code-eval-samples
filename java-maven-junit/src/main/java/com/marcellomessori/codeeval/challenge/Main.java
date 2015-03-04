@@ -3,15 +3,20 @@ package com.marcellomessori.codeeval.challenge;
 public class Main {
 
 	public static void main(String[] args) {
-		Challenge challenge = new Challenge();
-		System.out.println(challenge.play("Hello World!"));
+		Challenge challenge = new Challenge("Hello World!");
+		challenge.play();
 	}
 }
 
 class Challenge {
+	private final String input;
 
-	public String play(String input) {
-		return processInput(input);
+	public Challenge(String input) {
+		this.input = input;
+	}
+
+	public void play() {
+		System.out.println(processInput(input));
 	}
 
 	// TODO change this
