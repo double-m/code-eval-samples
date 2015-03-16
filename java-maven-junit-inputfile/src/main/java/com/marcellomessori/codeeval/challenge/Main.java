@@ -21,16 +21,18 @@ public class Main {
 
 class Challenge {
 	private File inputFile;
+	private ChallengeHelper challengeHelper;
 	
 	public Challenge(File file) {
 		this.inputFile = file;
+		challengeHelper = new ChallengeHelper();
 	}
 	
 	public void play() {
 		processInputFile();
 	}
 
-	protected void processInputFile() {
+	private void processInputFile() {
 
 		try {
 			BufferedReader in = new BufferedReader(new FileReader(inputFile));
@@ -46,5 +48,8 @@ class Challenge {
 			System.out.println("File Read Error: " + e.getMessage());
 		}
 	}
+}
 
+class ChallengeHelper {
+	
 }

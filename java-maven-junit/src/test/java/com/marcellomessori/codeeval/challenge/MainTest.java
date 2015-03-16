@@ -25,7 +25,7 @@ public class MainTest {
 	}
 	
 	@Ignore
-	public void shouldPassSomeFunctionalTest() {
+	public void shouldPassSomeFunctionalTests() {
 		
 	}
 
