@@ -1,4 +1,4 @@
-var fs  = require("fs")
+var fs  = require('fs')
   , fileToProcess = process.argv[2];
 
 if (!fileToProcess || fileToProcess.charAt(0)==='-') {
@@ -7,7 +7,11 @@ if (!fileToProcess || fileToProcess.charAt(0)==='-') {
 
 fs.readFileSync(fileToProcess).toString().split('\n').forEach(function (line) {
   if (line !== "") {
-    console.log(processLine(line));  
+    var result = processLine(line);
+    
+    if (result !== null) {
+      console.log(result);
+    }
   }
 });
 
