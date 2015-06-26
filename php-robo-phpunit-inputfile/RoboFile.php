@@ -2,7 +2,7 @@
 /**
  * CodeEval Challenge Task Runner
  * 
- * PHP version 5
+ * PHP version 5.3
  * 
  * @category TaskRunner
  * @package  CodeEval
@@ -14,7 +14,7 @@
 /**
  * RoboFile Class
  * 
- * PHP version 5
+ * PHP version 5.3
  * 
  * @category TaskRunner
  * @package  CodeEval
@@ -31,6 +31,12 @@ class RoboFile extends \Robo\Tasks
      */
     function start()
     {
+        $this->stopOnFail(false);
+        if (! $this->taskExec('which php53')->run()->wasSuccessful()) {
+            echo PHP_EOL;
+            $this->say("Warning: not found PHP v 5.3 -> using another version");
+            echo PHP_EOL;
+        }
         $this->taskExec('php src/app.php res/test_file.txt')->run()->wasSuccessful();
     }
 

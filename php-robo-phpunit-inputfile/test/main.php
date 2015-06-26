@@ -2,7 +2,7 @@
 /**
  * CodeEval Challenge Test Suite
  * 
- * PHP version 5
+ * PHP version 5.3
  * 
  * @category TestSuite
  * @package  CodeEval
@@ -20,7 +20,7 @@ require
 /**
  * ChallengeTest Class - *** CHALLENGE TITLE
  * 
- * PHP version 5
+ * PHP version 5.3
  * 
  * @category TestSuite
  * @package  CodeEval
@@ -37,7 +37,7 @@ class ChallengeTest extends PHPUnit_Framework_TestCase
         $this->challenge = new Challenge;
     }
     
-    public function testThiSuite()
+    public function testThisSuite()
     {
         $this->assertEquals('abc', $this->challenge->processTest('abc'));
     }

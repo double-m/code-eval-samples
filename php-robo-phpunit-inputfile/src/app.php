@@ -2,7 +2,7 @@
 /**
  * CodeEval Challenge Suite
  * 
- * PHP version 5
+ * PHP version 5.3
  * 
  * @category Suite
  * @package  CodeEval
@@ -14,7 +14,7 @@
 /**
  * Challenge Class - *** CHALLENGE TITLE
  * 
- * PHP version 5
+ * PHP version 5.3
  * 
  * @category Algorithm
  * @package  CodeEval
