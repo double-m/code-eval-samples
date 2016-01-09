@@ -13,6 +13,9 @@
   "node": true,
   "laxcomma": true,
   "globals": {
+    "require": true,
+    "exports": true,
+    "process": true,
     "it": true,
     "xit": true,
     "describe": true,
